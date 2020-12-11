@@ -1,11 +1,10 @@
 # Installing Docker on Centos VM 
 
-&nbsp; The Instruction is followed from [here](https://phoenixnap.com/kb/how-to-install-docker-centos-7)
+The Instruction is followed from [here](https://phoenixnap.com/kb/how-to-install-docker-centos-7)
 
 #### Step 1: Update your System 
 
 &nbsp; In a terminal window, type: 
-
    
 ```
 [mosipuser@k8Master1 ~]$ sudo yum update
@@ -18,7 +17,7 @@ Loading mirror speeds from cached hostfile
 
 #### Step 2:  Install the Dependencies
 
-&nbsp; The next step is to download the dependencies required for installing Docker.<br>&nbsp; Type in the following command:
+&nbsp; The next step is to download the dependencies required for installing Docker.<br >&nbsp; Type in the following command:
 
     
 ```
@@ -27,7 +26,7 @@ Loading mirror speeds from cached hostfile
 
 #### Step 3:  Add the Docker Repository to CentOS
 
-&nbsp; To install the edge or test versions of Docker, you need to add the Docker CE stable repository to your system.
+&nbsp; To install the edge or test versions of Docker, you need to add the Docker CE stable repository to your system.<br>
 &nbsp; To do so, run the command: 
  
  ```
@@ -52,21 +51,20 @@ Complete
 &nbsp; Although you have installed Docker on CentOS, the service is still not running.<br>
 &nbsp; To start the service, enable it to run at startup.<br>
 &nbsp; Run the following commands in the order listed below.<br>
-
-&nbsp; **Start Docker: **
+&nbsp; **Start Docker :**
 
  ```
  [mosipuser@k8Master1 ~]$ sudo systemctl start docker
  ```
  
-&nbsp;  **Enable Docker: **
+&nbsp; **Enable Docker :**
  
  ```
  [mosipuser@k8Master1 ~]$ sudo systemctl enable docker
  Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service.
  ```
  
-&nbsp; **Check the status of the service with: **
+&nbsp; **Check the status of the service with :**
  
  ```
 [mosipuser@k8Master1 ~]$ sudo systemctl status docker
@@ -87,7 +85,7 @@ Dec 11 18:46:19 k8Master1 dockerd-current[1677]: time="2020-12-11T18:46:19.16142
 Hint: Some lines were ellipsized, use -l to show in full.
  ```
  
-&nbsp; **To stop the Docker service : **
+&nbsp; **To stop the Docker service :**
  
  ```
 [mosipuser@k8Master1 ~]$ sudo systemctl stop docker
@@ -96,17 +94,17 @@ Hint: Some lines were ellipsized, use -l to show in full.
 
 ## Install a Specific Version of Docker on CentOS
 
-&nbsp; To install a specific version of Docker, start by listing the available releases.<br>
+ <pre style="font-family:helvitica;font-size:15px">&nbsp; To install a specific version of Docker, start by listing the available releases.<br>
 &nbsp; Type the following in your terminal window:.
-
+</pre>
 
 ```
 yum list docker-ce --showduplicates | sort –r
 ```
 
-&nbsp; The system should give you a list of different versions from the repositories you have enabled above.
+The system should give you a list of different versions from the repositories you have enabled above.
 
-&nbsp; **Install the selected Docker version with the command:**
+&nbsp; **Install the selected Docker version with the command :**
 
 ```
 sudo yum install docker-ce-<VERSION STRING>
