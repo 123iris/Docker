@@ -1,4 +1,4 @@
-# Installing Docker on Centos VM 
+# Steps to Install Docker on Centos VM 
 
 The Instruction is followed from [here](https://phoenixnap.com/kb/how-to-install-docker-centos-7)
 
@@ -109,3 +109,7 @@ The system should give you a list of different versions from the repositories yo
 ```
 sudo yum install docker-ce-<VERSION STRING>
 ```
+
+## References 
+
+1. [Phoenixnap.com](https://phoenixnap.com/kb/how-to-install-docker-centos-7)
