@@ -2,7 +2,7 @@
 
 The Instruction is followed from [here](https://phoenixnap.com/kb/how-to-install-docker-centos-7)
 
-#### Step 1: Update your System 
+### Step 1: Update your System 
 
 &nbsp; In a terminal window, type: 
    
@@ -15,7 +15,7 @@ Loading mirror speeds from cached hostfile
 &nbsp; Allow the operation to complete.
 
 
-#### Step 2:  Install the Dependencies
+### Step 2:  Install the Dependencies
 
 &nbsp; The next step is to download the dependencies required for installing Docker.<br >&nbsp; Type in the following command:
 
@@ -24,7 +24,7 @@ Loading mirror speeds from cached hostfile
 [mosipuser@k8Master1 ~]$ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 ```
 
-#### Step 3:  Add the Docker Repository to CentOS
+### Step 3:  Add the Docker Repository to CentOS
 
 &nbsp; To install the edge or test versions of Docker, you need to add the Docker CE stable repository to your system.<br>
 &nbsp; To do so, run the command: 
@@ -33,7 +33,7 @@ Loading mirror speeds from cached hostfile
  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
  ```
  
-#### Step 4: Install Docker On CentOS Using Yum
+### Step 4: Install Docker On CentOS Using Yum
  
 &nbsp; With everything set, you can finally move on to installing Docker on CentOS 7 by running:
 
@@ -46,7 +46,7 @@ Complete
 
 &nbsp; The system should begin the installation. Once it finishes, it will notify you the installation is complete and which version of Docker is now running on your system.
 
-#### Step: 5 Manage Docker Service
+### Step: 5 Manage Docker Service
 
 &nbsp; Although you have installed Docker on CentOS, the service is still not running.<br>
 &nbsp; To start the service, enable it to run at startup.<br>
